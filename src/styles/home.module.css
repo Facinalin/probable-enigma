@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3.5px solid #161616;
+  width: 100%;
+}
+.header h2 {
+  font-size: 4em;
+  color: #161616;
+}
+.header h3 {
+  font-size: 3em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #161616;
+}
+.btn {
+  display: inline-block;
+  background: #d84242;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 3px solid #161616;
+}

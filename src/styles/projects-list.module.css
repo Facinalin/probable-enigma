@@ -1,0 +1,14 @@
+.perArticle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+
+.articlePic {
+  width: 350px;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  border: 4px solid #161616;
+}
