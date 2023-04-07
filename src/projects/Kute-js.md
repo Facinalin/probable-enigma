@@ -1,9 +1,10 @@
 ---
-title: 動畫外掛KUTE.js
-stack: KUTE.js + CSS
-slug: the-kute-js
+title: 拆卡團
+stack: vue.js + CSS
+slug: the-vue-vite-js
 date: 2023-03-28T00:00:00+00:00
 thumb: ../images/thumbs/kute.png
+imgarr: https://i.imgur.com/bDm5ity.png,https://i.imgur.com/ySrMkKW.png,https://i.imgur.com/YbYvomR.png,https://i.imgur.com/JOgeBTF.png,https://i.imgur.com/pmi6Psl.png,https://i.imgur.com/y26GN7e.png
 ---
 
 ## KUTE.js

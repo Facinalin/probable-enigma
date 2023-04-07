@@ -4,6 +4,7 @@ stack: Vue.js + SCSS
 slug: the-vue-js
 date: 2023-03-27T00:00:00+00:00
 thumb: ../images/thumbs/vue.png
+imgarr: ../images/tools/vue.png,../images/tools/js.png,../images/tools/SASS.png
 ---
 
 # Vite 開發-專案建立流程

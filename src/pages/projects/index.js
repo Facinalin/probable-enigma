@@ -6,6 +6,7 @@ import { perArticle, articlePic } from "../../styles/projects-list.module.css"
 export default function projects({ data }) {
   const projects = data.blogposts.nodes
   const contact = data.contact.siteMetadata.contact
+  console.log(projects[0].frontmatter.imgarr)
   
   return (
     <Layout>
@@ -45,6 +46,7 @@ query ProjectsPage {
         stack
         title
         slug
+        imgarr
         thumb {
           childImageSharp {
             fluid {

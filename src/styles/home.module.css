@@ -1,13 +1,29 @@
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  border: 3.5px solid #161616;
-  width: 100%;
+  border: 4px solid #161616;
+  max-width: 100%;
+  padding-top: 70px;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.header:before {
+  position: absolute;
+  content: "";
+  border-left: 6px solid #fdb8a2;
+  height: 100%;
+  width: 15px;
+  background: #fdded5;
+  left: 196px;
+  top: 0;
+  bottom: 0;
 }
 .header h2 {
   font-size: 4em;
+  font-family: "Noto Sans TC", sans-serif;
   color: #161616;
 }
 .header h3 {
@@ -21,8 +37,432 @@
   background: #d84242;
   padding: 10px 16px;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
   font-weight: 500;
   color: #ffffff;
   border: 3px solid #161616;
+  margin-bottom: 36px;
+  font-size: 1.5em;
+  margin-right: 40px;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #d84242;
+}
+
+.btnBlue {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 3px solid #161616;
+  margin-bottom: 36px;
+  font-size: 1.5em;
+  background: #7283df;
+}
+
+.btnBlue:hover {
+  background: #ffffff;
+  color: #7283df;
+}
+
+.headerHorsePic {
+  position: absolute;
+  top: 150px;
+  left: 24px;
+}
+
+.headerTxt {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.headerDownTxtDiv {
+  overflow: hidden;
+  width: 80%;
+}
+
+.headerTxt svg {
+  display: block;
+}
+
+.secondSection {
+  border: 3.5px solid #161616;
+  max-width: 100%;
+  height: 100%;
+}
+
+.secondSectionContent {
+  border-top: 2px solid #161616;
+  border-bottom: 2px solid #161616;
+  max-width: 100%;
+}
+
+.secondSectionContent svg {
+  max-width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.secondSectionContentTxt {
+  max-width: 96%;
+  margin: 0 auto;
+}
+
+.secondSectionContentTxt svg {
+  width: 100%;
+  padding: 60px 0;
+}
+
+.thirdSection {
+  background: #ffffff;
+  padding: 30px 24px;
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #161616;
+  border-top: none;
+}
+
+.thirdSection img {
+  width: auto;
+  height: 65px;
+  object-fit: cover;
+  transition: all 0.15s ease;
+}
+
+.thirdSection img:hover {
+  height: 60px;
+  filter: brightness(100%) opacity(0.5);
+}
+
+.fourthSection {
+  border: 3px solid #161616;
+  display: flex;
+}
+
+.headerDeco {
+  height: 8px;
+  width: 100%;
+  background: #ffe8ac;
+  border-bottom: 3px solid #161616;
+  top: 0;
+  position: absolute;
+}
+
+.fourthSectionEmailContent {
+  width: 50%;
+  border: 3px solid #161616;
+  background: #bbc6fe;
+  padding: 24px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fourthSectionEmailContent a {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.fourthSectionEmailContent:hover {
+  background: #545b97;
+}
+
+.fourthSectionEmailContent:hover a {
+  color: #ffffff;
+}
+
+.fourthSectionSocMediaContent {
+  width: 50%;
+  border: 3px solid #161616;
+  background: #a89191;
+  padding: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fourthSectionSocMediaContent img {
+  width: 45px;
+  padding-right: 20px;
+}
+
+.fourthSectionSocMediaContent img:hover {
+  filter: brightness(0) invert(1);
+}
+
+.fourthSectionSocMediaContent:hover {
+  background: #3f3030;
+}
+
+.fourthSectionSocMediaContent:hover h3 {
+  color: #ffffff;
+}
+
+.aboutTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+}
+
+.aboutContent {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutContent h1 {
+  line-height: 2;
+}
+
+.aboutContent p {
+  font-size: 17px;
+}
+
+.portfolio {
+  width: 160px;
+  display: block;
+  margin-right: 28px;
+}
+
+.aboutMeSection {
+  border: 3px solid #161616;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutBtnArea {
+  display: flex;
+}
+
+@media screen and (max-width: 1120px) {
+  .thirdSection img {
+    height: 50px;
+  }
+  .thirdSection img:hover {
+    height: 54px;
+  }
+
+  .headerTxt svg {
+    width: 85%;
+  }
+
+  .portfolio {
+    width: 130px;
+    margin-right: 16px;
+  }
+
+  .aboutTitle svg {
+    width: 640px;
+    height: 85px;
+  }
+
+  .headerHorsePic {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .thirdSection img {
+    height: 40px;
+  }
+  .thirdSection img:hover {
+    height: 42px;
+  }
+
+  .aboutTitle svg {
+    width: 580px;
+    height: 60px;
+  }
+
+  .portfolio {
+    width: 120px;
+    margin-right: 0px;
+  }
+
+  .headerTxt svg {
+    margin-right: 0px;
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  .headerHorsePic {
+    overflow: hidden;
+    z-index: -2;
+  }
+
+  .header:before {
+    z-index: -3;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .thirdSection img {
+    width: 19%;
+    height: auto;
+    display: block;
+    padding: 16px;
+  }
+  .thirdSection img:hover {
+    width: 18%;
+    height: auto;
+  }
+  .thirdSection {
+    flex-wrap: wrap;
+  }
+
+  .aboutTitle svg {
+    width: 380px;
+    height: 55px;
+  }
+
+  .portfolio {
+    width: 120px;
+    margin-right: 8px;
+  }
+
+  .header {
+    padding-top: 70px;
+    padding-bottom: 230px;
+  }
+
+  .headerHorsePic {
+    top: 340px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .fourthSectionEmailContent a {
+    font-size: 1.2em;
+  }
+
+  .fourthSectionEmailContent {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .aboutTitle svg {
+    width: 370px;
+    height: 55px;
+  }
+
+  .portfolio {
+    width: 90px;
+    margin-right: 6px;
+  }
+
+  .fourthSectionEmailContent {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .aboutTitle {
+    flex-wrap: wrap;
+  }
+
+  .aboutTitle svg {
+    width: 430px;
+  }
+
+  .portfolio {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+  .fourthSectionEmailContent a {
+    font-size: 1em;
+  }
+
+  .fourthSection {
+    flex-wrap: wrap;
+  }
+
+  .fourthSectionSocMediaContent {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fourthSectionEmailContent {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fourthSectionEmailContent a {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .fourthSectionSocMediaContent img {
+    width: 50px;
+    padding-right: 14px;
+  }
+
+  .aboutContent {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  .aboutBtnArea {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    display: block;
+    margin: 0px auto;
+    padding: 10px 20px;
+  }
+
+  .btnBlue {
+    display: block;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .aboutTitle svg {
+    width: 350px;
+  }
+  .fourthSectionEmailContent a {
+    font-size: 10px;
+  }
+
+  .fourthSectionEmailContent a {
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aboutTitle svg {
+    width: 270px;
+  }
+
+  .headerHorsePic svg {
+    width: 100%;
+  }
+
+  .header:before {
+    left: 53%;
+  }
+
+  .btn {
+    margin-top: 30px;
+  }
 }

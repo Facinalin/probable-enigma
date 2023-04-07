@@ -1,17 +1,24 @@
 // import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
+import { detailPic, picRow } from  "../styles/project-detail.module.css"
 
 export default function projectDetail({data}) {
   const { html } = data.markdownRemark
-  const { title, stack } = data.markdownRemark.frontmatter
+  const { title, stack, imgarr } = data.markdownRemark.frontmatter
+  const imgarray = imgarr.split(',')
+  console.log(imgarray)
   return (
     <Layout>
         <div>
             <h2>{title}</h2>
             <h3>{stack}</h3>
-            <img alt=""></img>
+            <div className={picRow}>
+              {imgarray.map(el => (
+             <img src={el} alt="" key={el} className={detailPic}/>
+              ))}
+            </div>
             <div dangerouslySetInnerHTML={{ __html:html}} />
             </div> 
     </Layout>
@@ -29,6 +36,7 @@ query perPostQuery($slug: String) {
       frontmatter {
         stack
         title
+        imgarr
       }
     }
   }`

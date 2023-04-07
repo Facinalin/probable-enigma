@@ -26,3 +26,61 @@ exports.createPages = async ({ graphql, actions }) => {
     })
     })
 }
+
+// exports.onCreateNode = ({ node, actions }) => {
+//   const { createNodeField } = actions
+ 
+//   if (node.internal.type === 'allMarkdownRemark') {
+//     console.log('有')
+//     // 假設您的Markdown文件中的圖片路徑是存儲在名為'imgarr'的數組字段中
+//     const imgarr = node.frontmatter.imgarr || []
+//     // 將imgarr添加為节点字段
+//     createNodeField({
+//       node,
+//       name: 'imgarr',
+//       value: imgarr
+//     })
+//   }
+// }
+
+const { createRemoteFileNode } = require('gatsby-source-filesystem')
+
+exports.createResolvers = ({ createResolvers, createResolverContext }) => {
+  const resolvers = {
+    allMarkdownRemark: {
+      images: {
+        type: '[File]',
+        resolve(source, args, context, info) {
+          const imagePaths = source.frontmatter.imgarr || []
+          const { nodeModel } = context
+
+          return Promise.all(
+            imagePaths.map((imagePath) => {
+              return nodeModel.runQuery({
+                query: {
+                  filter: {
+                    relativePath: { eq: imagePath },
+                  },
+                },
+                type: 'File',
+                firstOnly: true,
+              }).then(fileNode => {
+                if (!fileNode) return null
+
+                return createRemoteFileNode({
+                  url: fileNode.publicURL,
+                  parentNodeId: source.id,
+                  createNode: context.actions.createNode,
+                  createNodeId: context.createNodeId,
+                  cache: context.cache,
+                })
+              })
+            })
+          )
+        },
+      },
+    },
+  }
+
+  createResolvers(resolvers)
+}

@@ -1,0 +1,32 @@
+.portfolio {
+  width: 160px;
+  display: block;
+  margin-right: 28px;
+}
+
+.aboutMe {
+  border: 3px solid #161616;
+}
+
+.headerDeco {
+  height: 8px;
+  max-width: 100%;
+  background: #ffe8ac;
+  border-bottom: 3px solid #161616;
+}
+
+.aboutTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+}
+
+.aboutContent {
+  padding: 70px;
+}
+
+.aboutContent p {
+  font-size: 17px;
+}
