@@ -214,7 +214,7 @@ tl.to(headerDownTxtDom, {xPercent: 0});
 
 
         <h1>我是 Facina，集創造力與美感於一身，與 chatGPT 亦敵亦友的前端工程師。</h1>
-        <h1>你的 UX，我來守護。</h1>
+        <h1>你的 UX，我來守護。。</h1>
         <div className={aboutBtnArea}>
         <Link to="/projects" className={btn}>我的作品</Link>
         <a href="https://www.cakeresume.com/s--z4zXZDBhSta6VAC3zTBBnQ--/facina-lin" target="_blank" rel="noreferrer" className={btnBlue}>我的履歷</a>
