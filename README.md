@@ -8,7 +8,7 @@
   Facina's Playground個人網站
 </h1>
 
-[觀看連結](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)
+[觀看連結](https://6433d1cb54084969dc7a7eac--deft-squirrel-12b4d0.netlify.app/)
 
 ## 🚀 快速開始：
 
