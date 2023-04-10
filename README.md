@@ -7,8 +7,8 @@
 <h1 align="center">
   Facina's Playground個人網站
 </h1>
-<p>觀看連結
-<a href="https://www.gatsbyjs.com"></p>
+
+[觀看連結](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)
 
 ## 🚀 快速開始：
 
@@ -53,7 +53,7 @@ A quick look at the top-level files and directories you'll see in a typical Gats
     ├── package.json
     └── README.md
 
-## :rocket: 資料夾結構：
+## :robot: 資料夾結構：
 
 - "gatsby": "^5.8.0",
 - "gsap": "^3.11.5",
@@ -62,7 +62,7 @@ A quick look at the top-level files and directories you'll see in a typical Gats
 
 ## 💫 聯絡我：
 
-[Gmail](mailto:lovemistborn13@gmail.com)
+[Gmail](mailto:lovemistborn13@gmail.com)  
 [CakeResume](https://www.cakeresume.com/s--z4zXZDBhSta6VAC3zTBBnQ--/facina-lin)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
