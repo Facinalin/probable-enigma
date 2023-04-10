@@ -5,7 +5,7 @@ slug: the-react-js
 date: 2023-03-29T00:00:00+00:00
 thumb: ../images/thumbs/peronsal-site.png
 imgarr: ../images/tools/vue.png,../images/tools/js.png,../images/tools/SASS.png
-url: https://642fcb20c0d0ad7fb45acbd0--rainbow-medovik-1e7e89.netlify.app/
+url: link
 gitRepo: https://github.com/Facinalin/probable-enigma
 pack: Gatsby
 frameLang: React.js

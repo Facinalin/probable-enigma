@@ -11,6 +11,7 @@ export default function projectDetail({data}) {
   const styleSheetArray = styleSheet.split(',')
   const deployVerArray = deployVer.split(',')
   const pluginsArray = plugins.split(',')
+
   return (
     <Layout> 
         <div className={perProjectPage}>
@@ -35,7 +36,15 @@ export default function projectDetail({data}) {
         <div className={btnRow}>
             <h1>{title}</h1>
             <h3 style={{ color: '#5e81fd', marginTop:'24px', fontSize:'24px'}}>{stack}</h3>
-            <a href={url} target="_blank" rel="noreferrer" className={btn}>點我看作品</a>
+            {url === 'link' ? (
+        <Link to="/" className={btn}>
+          點我看作品
+        </Link>
+      ) : (
+        <a href={url} target="_blank" rel="noreferrer" className={btn}>
+          點我看作品
+        </a>
+      )}
             <a href={gitRepo} target="_blank" rel="noreferrer" className={btnWhite}>點我看程式碼</a>
             </div>
             <div className={picRow}>
