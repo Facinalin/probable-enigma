@@ -1,3 +1,4 @@
-[submodule "form-lab-react"]
-	path = form-lab-react
-	url = https://github.com/Facinalin/facina-playground.git
+
+[submodule "probable-enigma"]
+	path = probable-enigma
+	url = git@github.com:Facinalin/probable-enigma.git
