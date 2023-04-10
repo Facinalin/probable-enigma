@@ -32,8 +32,8 @@ const options = { duration: 2800, ease: 'power3.inOut', speed: 0.6 };
 // 創建 Tween
 let scaleYValue = 1.5;
 let scaleXValue = 1;
-let xPercentValStart = 99;
-let horseStartTranslateY = '-55px'
+let xPercentValStart = 140;
+let horseStartTranslateY = '-35px'
 let horseEndTranslateY = '45px'
 const parentHeight = headerTxtAreaDom.offsetHeight; // 获取父元素高度
 
@@ -44,7 +44,7 @@ let start = `bottom ${viewportHeight - parentHeight+150}px`;
 if (window.innerWidth < 900) {
   scaleYValue = 1.15;
   scaleXValue = 0.9;
-  xPercentValStart = 80;
+  xPercentValStart = 90;
   start = `bottom ${viewportHeight - parentHeight +350}px`;
   horseStartTranslateY = '-100px';
   horseEndTranslateY = '0px';
@@ -214,7 +214,7 @@ tl.to(headerDownTxtDom, {xPercent: 0});
 
 
         <h1>我是 Facina，集創造力與美感於一身，與 chatGPT 亦敵亦友的前端工程師。</h1>
-        <h1>你的 UX，我來守護。。</h1>
+        <h1>你的 UX，我來守護。</h1>
         <div className={aboutBtnArea}>
         <Link to="/projects" className={btn}>我的作品</Link>
         <a href="https://www.cakeresume.com/s--z4zXZDBhSta6VAC3zTBBnQ--/facina-lin" target="_blank" rel="noreferrer" className={btnBlue}>我的履歷</a>

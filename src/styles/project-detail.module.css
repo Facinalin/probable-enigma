@@ -1,14 +1,142 @@
 .detailPic {
-  width: 33%;
+  width: 33.3%;
   display: block;
   object-fit: cover;
+}
+
+.btn {
+  display: inline-block;
+  background: #d84242;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 3px solid #161616;
+  margin-bottom: 36px;
+  font-size: 1.5em;
+  margin-right: 40px;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #d84242;
+}
+
+@media screen and (max-width: 992px) {
+  .detailPic {
+    width: 50%;
+  }
+
+  .btnRow {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .detailPic {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .btnRow h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .btnRow h1 {
+    font-size: 36px;
+  }
 }
 
 .picRow {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  border: 1px solid #000;
   margin: 0 24px;
+}
+
+.btnRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnRow a {
+  margin-right: 0px;
+}
+
+.backToLastPage {
+  display: flex;
+}
+
+.backToLastPage svg {
+  margin-right: 14px;
+}
+
+.backToLastPage svg:hover {
+  fill: #ffffff;
+}
+
+.perProjectPage {
+  border-bottom: 10px solid #161616;
+  margin: 0 18px;
+}
+
+.techTool {
+  border-bottom: 2px solid #a89191;
+  margin: 40px 24px;
+  padding: 20px 0px;
+  display: flex;
+}
+
+.perToolList {
+  width: 16.6%;
+  text-align: center;
+}
+
+@media screen and (max-width: 920px) {
+  .perToolList {
+    width: 33%;
+    margin-bottom: 20px;
+  }
+
+  .techTool {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 712px) {
+  .perToolList {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .perToolList {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.btnWhite {
+  display: inline-block;
+  background: #7283df;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #ffffff;
+  border: 3px solid #161616;
+  margin-bottom: 36px;
+  font-size: 1.5em;
+  margin-right: 40px;
+}
+
+.btnWhite:hover {
+  background: #bbc6fe;
+  color: #161616;
 }

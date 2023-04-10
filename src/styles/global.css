@@ -27,12 +27,15 @@ p {
 }
 nav {
   display: flex;
-  justify-content: flex-end;
-  margin: 40px auto;
+  justify-content: center;
+  margin: 30px auto;
+  position: relative;
 }
 nav .links {
   display: inline-block;
-  text-align: right;
+  position: absolute;
+  right: 0px;
+  top: 20px;
   /* font-family: "Noto Sans TC", sans-serif; */
 }
 
@@ -65,6 +68,11 @@ svg {
   text-indent: -9999px;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
 .offcanvas {
   position: fixed;
   top: 0;
@@ -78,6 +86,20 @@ svg {
   transition: all 0.3s ease-in-out;
   border-left: 4px solid #161616;
   background: #fbf5ec;
+}
+
+@media screen and (max-width: 1120px) {
+  .offcanvas {
+    right: -50%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .offcanvas {
+    right: -100%;
+    width: 100%;
+  }
 }
 
 .offcanvas.show {
@@ -102,4 +124,29 @@ svg {
 .offCanvasCloseBtn {
   display: flex;
   justify-content: flex-end;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.logo:hover {
+  .left-circle:hover,
+  .right-circle:hover {
+    animation: pulse 2s infinite;
+  }
 }

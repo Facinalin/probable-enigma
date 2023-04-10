@@ -5,7 +5,6 @@ import { Link } from 'gatsby'
 export default function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
-  console.log(isOpen)
   const handleOpen = () => {
     setIsOpen(true);
   };
@@ -16,6 +15,12 @@ export default function Navbar() {
 
   return (
     <nav>
+      <div className="logo"><svg width="60" height="60" viewBox="0 0 318 318" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="12.5" y="12.5" width="293" height="293" stroke="#161616" strokeWidth="25"/>
+<circle className="left-circle" cx="244.4" cy="125.4" r="57.4" fill="#161616"/>
+<circle className="right-circle" cx="130.4" cy="125.4" r="57.4" fill="#161616"/>
+<rect x="73" y="238" width="229" height="60" fill="#161616"/>
+</svg></div>
     <div className="links">
       <button onClick={handleOpen}>
         <svg width="60" height="23" viewBox="0 0 101 47" fill="none" xmlns="http://www.w3.org/2000/svg">
